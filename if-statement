@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+        String email = "abc@gmail.com";
+        int password = 1234567;
+
+        System.out.println("Enter Your Email : ");
+        email = read.next();
+
+        System.out.println("Enter Your Password : ");
+        password = read.nextInt();
+
+        if(email.equals("abc@gmail.com") && password == 1234567){
+            System.out.println("successfully registered");
+        }else if (!email.equals("abc@gmail.com")){
+            System.out.println("Sorry Your Email is Not Correct");
+        }else {
+            System.out.println("Sorry Your Password is Not Correct");
+        }
+
+    }
+}
